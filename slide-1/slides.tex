@@ -1,0 +1,74 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithmicx}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5,debug]{beamerposter}%修改比
+\usepackage{tikz}
+\usepackage[linesnumbered, ruled]{algorithm2e}
+\SetKwRepeat{Repeat}{repeat}{until}%
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+
+\title{Paper Presentation}
+\subtitle{Adversarial training methods for semi-supervised text classification}
+% \date{\today}
+\date{\texttt{Nov 12, 2019}}
+\author{\texttt{Baodi Shan}}
+% \institute{Center for modern beamer themes}
+%\titlegraphic{\hfill\includegraphics[height=3cm]{matching.png}}
+
+\begin{document}
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+
+
+
+
+
+\maketitle
+
+\begin{frame}[fragile]{Something Embarrassing}
+	\begin{columns}[onlytextwidth]
+		\column{.4\textwidth}
+		
+		\begin{figure}
+			\includegraphics[width=1.2\linewidth]{gg.jpg}
+		\end{figure}
+		
+	\end{columns}
+\end{frame}
+
+
+
+
+\begin{frame}{Table of Contents}
+	\setbeamertemplate{section in toc}[sections numbered]
+	\tableofcontents[hideallsubsections]
+\end{frame}
+
+%\input
+\input{intro.tex}
+\input{matchings.tex}
+\input{bipartite.tex}
+\input{conclusion.tex}
+
+\begin{frame}[standout]
+  Questions?
+\end{frame}
+
+\begin{frame}[standout]
+  Thanks.
+\end{frame}
+
+\end{document}

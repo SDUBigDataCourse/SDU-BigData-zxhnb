@@ -1,0 +1,9 @@
+\frametitle{loss function}
+\[
+^^IR_{vadv}(D_l,D_{ul},\theta):=\frac{1}{N_l+N_{ul}}\sum_{x_*\in D_L,D_{ul}}^{}LDS(x_*,\theta)
+^^I\]
+^^I\[
+^^I^^I\mathit{loss}=l(D_l,\theta)+\alpha R_{vadv}(D_l,D_{ul},\theta)
+^^I\]
+^^I
+^^I
